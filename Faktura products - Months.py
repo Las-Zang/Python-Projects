@@ -15,8 +15,8 @@ df['dato'] = pd.to_datetime(df['dato'],format='%Y-%m-%d') # Til datetime
 payload = ""
 reqUrl = "https://restapi.e-conomic.com/products?skippages=0&pagesize=1000"
 headersList = {
- "X-AppSecretToken": "62oJndraQYc4jcxWy9BMNqVuI8wceuZUBDo4kemEzsA1",
- "X-AgreementGrantToken": "DSY7CZHX0dvYObXyGSTlcBL2nQS4EwBewabPGmxFO5w1",
+ "X-AppSecretToken": "SECRET",
+ "X-AgreementGrantToken": "SECRET",
  "Content-Type": "application/json" 
 }
 response = requests.request("GET", reqUrl, data=payload,  headers=headersList)
